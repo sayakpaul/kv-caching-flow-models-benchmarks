@@ -1,0 +1,647 @@
+{
+  "bucket": "sayakpaul/kv-caching-flow-models-benchmarks",
+  "files": [
+    {
+      "path": "flux2-kv/pretrained/benchmark_artifacts.zip",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/benchmark_artifacts.zip",
+      "size": 52066422,
+      "sha256": "e72fc4360ce780dce6f1c95a8203a4bc865a48c0bd4fc7ddce833bbe1d451d82"
+    },
+    {
+      "path": "flux2-kv/pretrained/failed_job_1.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/failed_job_1.json",
+      "size": 1069,
+      "sha256": "ef6e4eb5aa28997e05646b3d65bbf9ed4c5b24b43d68d8c6423584be5bf67d76"
+    },
+    {
+      "path": "flux2-kv/pretrained/inputs/diffusers-source.tar.gz",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/inputs/diffusers-source.tar.gz",
+      "size": 4966665,
+      "sha256": "58e4667db75e174957652f43c8f5fa6c99779033f61b0816265723ae5f00d2cb"
+    },
+    {
+      "path": "flux2-kv/pretrained/inputs/reference.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/inputs/reference.png",
+      "size": 773931,
+      "sha256": "c2c513eb1fec2edcb22116eeaf19e2a85b726f9517238b8df2da784f7fdd133c"
+    },
+    {
+      "path": "flux2-kv/pretrained/inputs/source_manifest.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/inputs/source_manifest.json",
+      "size": 1000,
+      "sha256": "58d296d62bac3241c74e78a6b525a6188820ae84679298e8ece9d43e6cba829a"
+    },
+    {
+      "path": "flux2-kv/pretrained/job.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/job.json",
+      "size": 941,
+      "sha256": "7dce1cad6d0627b0c11541b018dc2367e69acf6516ed43d6a499f9238f0115bb"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/measure_01_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/measure_02_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/measure_03_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/measure_04_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/measure_05_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/warmup_01_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/warmup_02_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/cached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/cached/warmup_03_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/measure_01_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/measure_02_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/measure_03_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/measure_04_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/measure_05_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/warmup_01_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/warmup_02_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/4_steps/uncached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/4_steps/uncached/warmup_03_seed_42.png",
+      "size": 1337452,
+      "sha256": "76e5e2aa4bc300d6434cce8382eda7b55d7e5087090b058c31fcc3606aa4a6ad"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/measure_01_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/measure_02_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/measure_03_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/measure_04_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/measure_05_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/warmup_01_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/warmup_02_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/cached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/cached/warmup_03_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/measure_01_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/measure_02_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/measure_03_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/measure_04_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/measure_05_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/warmup_01_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/warmup_02_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/8_steps/uncached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/8_steps/uncached/warmup_03_seed_42.png",
+      "size": 1356916,
+      "sha256": "328dbb388506205c8fdc4fb0d0dba89fec18e222bfdee0cc011e2edb9a341bf6"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/benchmark.pdf",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/benchmark.pdf",
+      "size": 30327,
+      "sha256": "2f7c26383efe3f29a1fd9febdb94fbf1644aefe281691cf8ec696dca358cb9d1"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/benchmark.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/benchmark.png",
+      "size": 159356,
+      "sha256": "467949997dda6adbe3542a3ea11c8e5c4ff865ac786f6987044d758184ea6203"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/benchmark.svg",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/benchmark.svg",
+      "size": 77778,
+      "sha256": "94631116e4403a814db4846669d4cee329b06ed3082f6bfe30b705e8b953585e"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/image_comparison.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/image_comparison.png",
+      "size": 3023541,
+      "sha256": "3dc5a6e949edbe162ab30f48129c242def4cf531146659056a6ab0d8c9756a82"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/job.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/job.json",
+      "size": 941,
+      "sha256": "7dce1cad6d0627b0c11541b018dc2367e69acf6516ed43d6a499f9238f0115bb"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/metadata.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/metadata.json",
+      "size": 3703,
+      "sha256": "8968f1761cc17ea89bc82ca6283bed8c7c93c3f360551b3179913a6fdcf0ded4"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/reference.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/reference.png",
+      "size": 773931,
+      "sha256": "c2c513eb1fec2edcb22116eeaf19e2a85b726f9517238b8df2da784f7fdd133c"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/runs.csv",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/runs.csv",
+      "size": 6300,
+      "sha256": "eb75bb79a570ee5d65f042dfda6c990af8fd45004c01d06f55836c144e0e8e14"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/source_manifest.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/source_manifest.json",
+      "size": 1000,
+      "sha256": "58d296d62bac3241c74e78a6b525a6188820ae84679298e8ece9d43e6cba829a"
+    },
+    {
+      "path": "flux2-kv/pretrained/results/summary.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/results/summary.json",
+      "size": 2264,
+      "sha256": "3a3b0363bfa6fccb336184b2d1f301e82ba743fa31c5b9c264bdef63eff2f0b8"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/benchmark_3refs_artifacts.zip",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/benchmark_3refs_artifacts.zip",
+      "size": 58800750,
+      "sha256": "91e7ab389e8af394b93016e55158a2ebd992eb4868bba455413ce47735a1939d"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/diffusers-source.tar.gz",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/diffusers-source.tar.gz",
+      "size": 4966765,
+      "sha256": "7f6d7caebc19c818450af213a927b5243c4df261344c610974538cb041d956ff"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/reference_01.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/reference_01.png",
+      "size": 773931,
+      "sha256": "c2c513eb1fec2edcb22116eeaf19e2a85b726f9517238b8df2da784f7fdd133c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/reference_02.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/reference_02.png",
+      "size": 789133,
+      "sha256": "b792b28c69aba03ae907f64f4de95e029e6cb2691cac89d32e3cc4cc43f61bc8"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/reference_03.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/reference_03.png",
+      "size": 1137611,
+      "sha256": "6833a0b6b79d5cd0abd901604c9f6cefff3c76ff6da82d61deef4c1f6c8ceb7e"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/reference_sources.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/reference_sources.json",
+      "size": 1261,
+      "sha256": "1bbad54ad56c798175b0167c1f9fa3e93375519f3c968e9b1225904ccde848ea"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/inputs/source_manifest.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/source_manifest.json",
+      "size": 2249,
+      "sha256": "95993237a4d00da84f40d6d1919720a8183ccb100a0c601a57b8abdb64850bf2"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/job.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/job.json",
+      "size": 2733,
+      "sha256": "620f6e3fe17254b6cd14efbcfbe34622823c33f477df21ef53c22fb1417ce417"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/comparison.csv",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/comparison.csv",
+      "size": 1501,
+      "sha256": "de16260d65d0f95bc2251a6f8aea502acfcc836b53063ddd2a41553dcfda6c5d"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/effects.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/effects.json",
+      "size": 739,
+      "sha256": "bf0cb0a0344349f08b719c7213b479f514e396012629e08bea564f4375801b69"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/image_comparison.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/image_comparison.png",
+      "size": 3232283,
+      "sha256": "598e40ad2e385addb8ee7e4f90baee137931066ca48d09cfa895364ad2960f8e"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.pdf",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.pdf",
+      "size": 30692,
+      "sha256": "e8fdb78daef0398721d924cfd1f910c33fd39c56393b82a2e0444ca4e1307ace"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.png",
+      "size": 195979,
+      "sha256": "843e86180e9fc0e3759dcab5d8c2eaa3ec70a15184c0c75a20b04f89178f291a"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.svg",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/reference_count_comparison.svg",
+      "size": 96030,
+      "sha256": "b0236fb76a219869ebf81d68f47711ed426bac6ecc9ccc2272753b797202dcb6"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/references.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/comparison/references.png",
+      "size": 1449353,
+      "sha256": "89e1e64c11e88cffe6b09b75586dafa17b2ba28cbe60d1514c7d0b04a49549f5"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/job.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/job.json",
+      "size": 2733,
+      "sha256": "620f6e3fe17254b6cd14efbcfbe34622823c33f477df21ef53c22fb1417ce417"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_01_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_02_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_03_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_04_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/measure_05_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_01_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_02_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/cached/warmup_03_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_01_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_02_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_03_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_04_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/measure_05_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_01_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_02_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/4_steps/uncached/warmup_03_seed_42.png",
+      "size": 1407430,
+      "sha256": "f2a63e7c52615ca562655c75fffb96e58ef7dd08185c8fbaba9fc3ec8abed580"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_01_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_02_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_03_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_04_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/measure_05_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_01_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_02_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/cached/warmup_03_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_01_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_02_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_03_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_04_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_04_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_05_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/measure_05_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_01_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_01_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_02_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_02_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_03_seed_42.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/8_steps/uncached/warmup_03_seed_42.png",
+      "size": 1470550,
+      "sha256": "8cbf009b2a1798802dcde6c90b1b2a54e9dbf95e5d14b2610dc3b44c743b7b8c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.pdf",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.pdf",
+      "size": 30167,
+      "sha256": "54a2e1e1e96ba52f33eba221ee1fe2cd0423bd8eab1eec750d53c136ada8d7e4"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.png",
+      "size": 163211,
+      "sha256": "b39448ea04bda5cccbc37d8e88e7b448a95021a5962d71627a43c9d3a467d400"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.svg",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/benchmark.svg",
+      "size": 78202,
+      "sha256": "468f2a9f1276cf189f5aa025408fa7b825b84a45c69a0f61ff9dc742273c508d"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/metadata.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/metadata.json",
+      "size": 4157,
+      "sha256": "ac155908626929d94bf04d28821d36a5bfbf1986c540592b072999e4e309c15d"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_01.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_01.png",
+      "size": 773931,
+      "sha256": "c2c513eb1fec2edcb22116eeaf19e2a85b726f9517238b8df2da784f7fdd133c"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_02.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_02.png",
+      "size": 789133,
+      "sha256": "b792b28c69aba03ae907f64f4de95e029e6cb2691cac89d32e3cc4cc43f61bc8"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_03.png",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_03.png",
+      "size": 1137611,
+      "sha256": "6833a0b6b79d5cd0abd901604c9f6cefff3c76ff6da82d61deef4c1f6c8ceb7e"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_sources.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/reference_sources.json",
+      "size": 1261,
+      "sha256": "1bbad54ad56c798175b0167c1f9fa3e93375519f3c968e9b1225904ccde848ea"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/runs.csv",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/runs.csv",
+      "size": 6310,
+      "sha256": "429609465602bd03680159816bee2a4e8b259fd167432e46fb1d039393114bb5"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/source_manifest.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/source_manifest.json",
+      "size": 2249,
+      "sha256": "95993237a4d00da84f40d6d1919720a8183ccb100a0c601a57b8abdb64850bf2"
+    },
+    {
+      "path": "flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/summary.json",
+      "url": "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/runs/flux2-kv-3refs-20260924-121120/results/summary.json",
+      "size": 2264,
+      "sha256": "9a90015f135a05f1e507dea0069e0cd90b24d1d29f2dbce5dc6176f2a038643d"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+diff --git a/src/diffusers/models/transformers/transformer_flux2.py b/src/diffusers/models/transformers/transformer_flux2.py
+index be56ecb93..90016de67 100644
+--- a/src/diffusers/models/transformers/transformer_flux2.py
++++ b/src/diffusers/models/transformers/transformer_flux2.py
+@@ -458,7 +458,7 @@ class Flux2KVAttnProcessor:
+             kv_cache.store(key[:, ref_start:ref_end].clone(), value[:, ref_start:ref_end].clone())
+ 
+         # Dispatch attention
+-        if kv_cache_mode == "extract" and num_ref_tokens > 0:
++        if kv_cache_mode in ("extract", "recompute") and num_ref_tokens > 0:
+             hidden_states = _flux2_kv_causal_attention(
+                 query, key, value, num_txt_tokens, num_ref_tokens, backend=self._attention_backend
+             )
+@@ -689,7 +689,7 @@ class Flux2KVParallelSelfAttnProcessor:
+             kv_cache.store(key[:, ref_start:ref_end].clone(), value[:, ref_start:ref_end].clone())
+ 
+         # Dispatch attention
+-        if kv_cache_mode == "extract" and num_ref_tokens > 0:
++        if kv_cache_mode in ("extract", "recompute") and num_ref_tokens > 0:
+             attn_output = _flux2_kv_causal_attention(
+                 query, key, value, num_txt_tokens, num_ref_tokens, backend=self._attention_backend
+             )
+@@ -1292,15 +1292,15 @@ class Flux2Transformer2DModel(
+         double_stream_mod_txt = self.double_stream_modulation_txt(temb)
+         single_stream_mod = self.single_stream_modulation(temb)
+ 
+-        # KV extract mode: create cache and blend modulations for ref tokens
+-        if kv_cache_mode == "extract" and num_ref_tokens > 0:
++        if kv_cache_mode in ("extract", "recompute") and num_ref_tokens > 0:
+             num_img_tokens = hidden_states.shape[1]  # includes ref tokens
+ 
+-            kv_cache = Flux2KVCache(
+-                num_double_layers=len(self.transformer_blocks),
+-                num_single_layers=len(self.single_transformer_blocks),
+-            )
+-            kv_cache.num_ref_tokens = num_ref_tokens
++            if kv_cache_mode == "extract":
++                kv_cache = Flux2KVCache(
++                    num_double_layers=len(self.transformer_blocks),
++                    num_single_layers=len(self.single_transformer_blocks),
++                )
++                kv_cache.num_ref_tokens = num_ref_tokens
+ 
+             # Ref tokens use a fixed timestep for modulation
+             ref_timestep = torch.full_like(timestep, ref_fixed_timestep * 1000)
+@@ -1332,11 +1332,11 @@ class Flux2Transformer2DModel(
+         )
+ 
+         # 4. Build joint_attention_kwargs with KV cache info
+-        if kv_cache_mode == "extract":
++        if kv_cache_mode in ("extract", "recompute"):
+             kv_attn_kwargs = {
+                 **(joint_attention_kwargs or {}),
+                 "kv_cache": None,
+-                "kv_cache_mode": "extract",
++                "kv_cache_mode": kv_cache_mode,
+                 "num_ref_tokens": num_ref_tokens,
+             }
+         elif kv_cache_mode == "cached" and kv_cache is not None:
+@@ -1377,8 +1377,7 @@ class Flux2Transformer2DModel(
+         # Concatenate text and image streams for single-block inference
+         hidden_states = torch.cat([encoder_hidden_states, hidden_states], dim=1)
+ 
+-        # Blend single block modulation for extract mode: [txt_mod, ref_mod, img_mod]
+-        if kv_cache_mode == "extract" and num_ref_tokens > 0:
++        if kv_cache_mode in ("extract", "recompute") and num_ref_tokens > 0:
+             total_single_len = hidden_states.shape[1]
+             single_stream_mod = _blend_single_block_mods(
+                 single_stream_mod, ref_single_mod, num_txt_tokens, num_ref_tokens, total_single_len
+@@ -1413,8 +1412,7 @@ class Flux2Transformer2DModel(
+                     joint_attention_kwargs=kv_attn_kwargs_single,
+                 )
+ 
+-        # Remove text tokens (and ref tokens in extract mode) from concatenated stream
+-        if kv_cache_mode == "extract" and num_ref_tokens > 0:
++        if kv_cache_mode in ("extract", "recompute") and num_ref_tokens > 0:
+             hidden_states = hidden_states[:, num_txt_tokens + num_ref_tokens :, ...]
+         else:
+             hidden_states = hidden_states[:, num_txt_tokens:, ...]
+diff --git a/src/diffusers/pipelines/flux2/pipeline_flux2_klein_kv.py b/src/diffusers/pipelines/flux2/pipeline_flux2_klein_kv.py
+index 82a33a845..4c98b0886 100644
+--- a/src/diffusers/pipelines/flux2/pipeline_flux2_klein_kv.py
++++ b/src/diffusers/pipelines/flux2/pipeline_flux2_klein_kv.py
+@@ -628,6 +628,7 @@ class Flux2KleinKVPipeline(DiffusionPipeline, Flux2LoraLoaderMixin):
+         callback_on_step_end_tensor_inputs: list[str] = ["latents"],
+         max_sequence_length: int = 512,
+         text_encoder_out_layers: tuple[int] = (9, 18, 27),
++        use_kv_cache: bool = True,
+     ):
+         r"""
+         Function invoked when calling the pipeline for generation.
+@@ -776,10 +777,6 @@ class Flux2KleinKVPipeline(DiffusionPipeline, Flux2LoraLoaderMixin):
+         num_warmup_steps = max(len(timesteps) - num_inference_steps * self.scheduler.order, 0)
+         self._num_timesteps = len(timesteps)
+ 
+-        # 7. Denoising loop with KV caching
+-        # Step 0 with ref images: forward_kv_extract (full pass, cache ref K/V)
+-        # Steps 1+: forward_kv_cached (reuse cached ref K/V)
+-        # No ref images: standard forward
+         self.scheduler.set_begin_index(0)
+         kv_cache = None
+ 
+@@ -791,12 +788,11 @@ class Flux2KleinKVPipeline(DiffusionPipeline, Flux2LoraLoaderMixin):
+                 self._current_timestep = t
+                 timestep = t.expand(latents.shape[0]).to(latents.dtype)
+ 
+-                if i == 0 and image_latents is not None:
+-                    # Step 0: include ref tokens, extract KV cache
++                if image_latents is not None and (i == 0 or not use_kv_cache):
+                     latent_model_input = torch.cat([image_latents, latents], dim=1).to(self.transformer.dtype)
+                     latent_image_ids = torch.cat([image_latent_ids, latent_ids], dim=1)
+ 
+-                    noise_pred, kv_cache = self.transformer(
++                    transformer_output = self.transformer(
+                         hidden_states=latent_model_input,
+                         timestep=timestep / 1000,
+                         guidance=None,
+@@ -805,9 +801,13 @@ class Flux2KleinKVPipeline(DiffusionPipeline, Flux2LoraLoaderMixin):
+                         img_ids=latent_image_ids,
+                         joint_attention_kwargs=self.attention_kwargs,
+                         return_dict=False,
+-                        kv_cache_mode="extract",
++                        kv_cache_mode="extract" if use_kv_cache else "recompute",
+                         num_ref_tokens=image_latents.shape[1],
+                     )
++                    noise_pred = transformer_output[0]
++                    if use_kv_cache:
++                        kv_cache = transformer_output[1]
++                    del transformer_output
+ 
+                 elif kv_cache is not None:
+                     # Steps 1+: use cached ref KV, no ref tokens in input

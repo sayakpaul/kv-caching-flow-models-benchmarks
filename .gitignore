@@ -1,0 +1,13 @@
+# Benchmark artifacts are published in the Hugging Face bucket (artifacts.json).
+/flux2-kv/**/*.png
+/flux2-kv/**/*.jpg
+/flux2-kv/**/*.jpeg
+/flux2-kv/**/*.webp
+/flux2-kv/**/*.json
+/flux2-kv/**/*.csv
+/flux2-kv/**/*.pdf
+/flux2-kv/**/*.svg
+/flux2-kv/**/*.zip
+/flux2-kv/**/*.tar.gz
+__pycache__/
+*.pyc
