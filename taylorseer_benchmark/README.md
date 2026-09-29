@@ -2,14 +2,7 @@
 
 [Results](runs/flux2-taylorseer-bench-20260929-101414/README.md) · [Performance chart](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/runs/flux2-taylorseer-bench-20260929-101414/taylorseer_performance.png) · [Image comparison](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/runs/flux2-taylorseer-bench-20260929-101414/comparison_seed_42.png)
 
-All images, saved latents, result data, logs, and the source archive are in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/tree/taylorseer_benchmark). Before running these scripts, restore artifacts from the repository root:
-
-```bash
-hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks/taylorseer_benchmark taylorseer_benchmark --ignore-existing
-hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks/flux2-kv/pretrained flux2-kv/pretrained --ignore-existing
-```
-
-The second command restores the earlier run's metadata used to pin job dependencies. See the [download instructions](../README.md).
+All images, saved latents, result data, logs, and the source archive are in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/tree/taylorseer_benchmark).
 
 This compares the normal `Flux2KleinKVPipeline` reference-image KV cache against that same cache plus [TaylorSeer](https://huggingface.co/docs/diffusers/main/en/optimization/cache#taylorseer-cache). It does not enable text KV caching.
 

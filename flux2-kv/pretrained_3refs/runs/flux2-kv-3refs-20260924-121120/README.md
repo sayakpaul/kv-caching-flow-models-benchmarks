@@ -1,6 +1,6 @@
 # FLUX.2 Klein 9B KV benchmark with three reference images
 
-Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Before running the commands below, restore them with `hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks . --ignore-existing` from the repository root; see the [download instructions](../../../../README.md).
+Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks).
 
 With three reference images, KV caching reduced median full-pipeline latency by **42.1% at 4 steps** and **51.3% at 8 steps**. Speedups were **1.73×** and **2.05×**, respectively. Peak allocated GPU memory increased by **4.124 GiB**. Cached and uncached output PNGs were pixel-identical at each step count.
 
@@ -63,7 +63,7 @@ Results live in [runs/flux2-kv-3refs-20260924-121120/](https://huggingface.co/bu
 
 The full source bundle is [inputs/diffusers-source.tar.gz](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/inputs/diffusers-source.tar.gz), based on Diffusers revision `e0118ade2f60234c41bacf40330a7e2f61108849`. Source hashes were verified against the executed job's manifest.
 
-Apply the patch using the [three-reference instructions](../../README.md). The benchmark accepts multiple paths after `--reference`. After restoring the artifacts, the launcher supplies the three saved reference images. Run this from the repository root:
+Apply the patch using the [three-reference instructions](../../README.md). The benchmark accepts multiple paths after `--reference`. The launcher supplies the three saved reference images. Run this from the repository root:
 
 ```bash
 python flux2-kv/pretrained_3refs/submit_job.py
