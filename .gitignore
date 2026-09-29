@@ -1,4 +1,4 @@
-# Benchmark artifacts are published in the Hugging Face bucket (artifacts.json).
+# Benchmark artifacts are published in the Hugging Face bucket.
 /flux2-kv/**/*.png
 /flux2-kv/**/*.jpg
 /flux2-kv/**/*.jpeg
@@ -9,5 +9,17 @@
 /flux2-kv/**/*.svg
 /flux2-kv/**/*.zip
 /flux2-kv/**/*.tar.gz
+/taylorseer_benchmark/**/*.png
+/taylorseer_benchmark/**/*.jpg
+/taylorseer_benchmark/**/*.jpeg
+/taylorseer_benchmark/**/*.webp
+/taylorseer_benchmark/**/*.json
+/taylorseer_benchmark/**/*.csv
+/taylorseer_benchmark/**/*.pdf
+/taylorseer_benchmark/**/*.svg
+/taylorseer_benchmark/**/*.zip
+/taylorseer_benchmark/**/*.tar.gz
+/taylorseer_benchmark/**/*.pt
+/taylorseer_benchmark/**/*.log
 __pycache__/
 *.pyc

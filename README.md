@@ -2,22 +2,24 @@
 
 - [FLUX.2 Klein: one reference image](flux2-kv/pretrained/README.md)
 - [FLUX.2 Klein: three reference images](flux2-kv/pretrained_3refs/README.md)
+- [Reference KV caching + TaylorSeer](taylorseer_benchmark/README.md)
 
-Images, measurements, result JSON, charts, job records, and source archives are stored in the public [Hugging Face bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Code, patches, and reports remain in Git. [artifacts.json](artifacts.json) lists every artifact's absolute download URL, size, and SHA-256 checksum, preserving the repository's directory layout in the bucket.
+Images, saved latents, measurements, result JSON, charts, job records, logs, and source archives are stored in the public [Hugging Face bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks), preserving the repository's directory layout. Code, patches, and reports remain in Git.
 
-To restore all published artifacts into a fresh clone, run this from the repository root (Python 3.10 or newer; no additional packages or HF login needed):
+To restore all published artifacts into a fresh clone, run this from the repository root using the [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/buckets). The bucket is public; downloads do not require an HF login.
 
 ```bash
-python download_artifacts.py
+hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks . --ignore-existing
 ```
 
 To download only one benchmark's artifacts:
 
 ```bash
-python download_artifacts.py --prefix flux2-kv/pretrained
-python download_artifacts.py --prefix flux2-kv/pretrained_3refs
+hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks/flux2-kv/pretrained flux2-kv/pretrained --ignore-existing
+hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks/flux2-kv/pretrained_3refs flux2-kv/pretrained_3refs --ignore-existing
+hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks/taylorseer_benchmark taylorseer_benchmark --ignore-existing
 ```
 
-Run the full download before submitting jobs or comparing the two benchmarks. Downloaded files are ignored by Git. The downloader verifies every file and preserves existing files that differ from the published run unless `--overwrite` is supplied. Original result records and archives retain their recorded paths and contents; benchmark scripts use the restored local files.
+Run the full download before submitting jobs or comparing benchmarks. Downloaded files are ignored by Git, and `--ignore-existing` preserves existing local files. Original result records and archives retain their recorded paths and contents; benchmark scripts use the restored local files.
 
 Complete archive downloads: [one reference](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained/benchmark_artifacts.zip), [three references](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/flux2-kv/pretrained_3refs/benchmark_3refs_artifacts.zip).

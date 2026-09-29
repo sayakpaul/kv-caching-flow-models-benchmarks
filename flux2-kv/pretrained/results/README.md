@@ -1,6 +1,6 @@
 # FLUX.2 Klein 9B KV: cache benchmark
 
-Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Before running the commands below, restore them by running `python download_artifacts.py` from the repository root; see the [download instructions](../../../README.md).
+Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Before running the commands below, restore them with `hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks . --ignore-existing` from the repository root; see the [download instructions](../../../README.md).
 
 KV caching reduced median full-pipeline latency by **23.1% at 4 steps** and **28.4% at 8 steps** on one NVIDIA A100-SXM4-80GB. Peak allocated GPU memory increased by **0.749 GiB**. Cached and uncached output images were pixel-identical for this input and seed.
 

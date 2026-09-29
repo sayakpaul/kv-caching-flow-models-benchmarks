@@ -1,6 +1,6 @@
 # FLUX.2 Klein KV benchmark: one reference image
 
-Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Before running the commands below, restore them by running `python download_artifacts.py` from the repository root; see the [download instructions](../../README.md).
+Artifacts are hosted in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks). Before running the commands below, restore them with `hf buckets sync hf://buckets/sayakpaul/kv-caching-flow-models-benchmarks . --ignore-existing` from the repository root; see the [download instructions](../../README.md).
 
 | Measurement | Without cache | With cache |
 | --- | ---: | ---: |
