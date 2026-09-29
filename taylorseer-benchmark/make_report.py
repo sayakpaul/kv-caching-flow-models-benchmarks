@@ -24,7 +24,7 @@ else:
 run = results.parent
 artifact_base = (
     "https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/"
-    f"taylorseer_benchmark/runs/{run.name}"
+    f"taylorseer-benchmark/runs/{run.name}"
 )
 summary = json.loads((results / "summary.json").read_text())
 validation = json.loads((results / "validation.json").read_text())

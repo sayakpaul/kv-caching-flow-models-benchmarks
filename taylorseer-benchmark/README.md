@@ -1,8 +1,8 @@
 # Reference KV caching + TaylorSeer
 
-[Results](runs/flux2-taylorseer-bench-20260929-101414/README.md) · [Performance chart](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/runs/flux2-taylorseer-bench-20260929-101414/taylorseer_performance.png) · [Image comparison](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/runs/flux2-taylorseer-bench-20260929-101414/comparison_seed_42.png)
+[Results](runs/flux2-taylorseer-bench-20260929-101414/README.md) · [Performance chart](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/runs/flux2-taylorseer-bench-20260929-101414/taylorseer_performance.png) · [Image comparison](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/runs/flux2-taylorseer-bench-20260929-101414/comparison_seed_42.png)
 
-All images, saved latents, result data, logs, and the source archive are in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/tree/taylorseer_benchmark).
+All images, saved latents, result data, logs, and the source archive are in the public [HF bucket](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/tree/taylorseer-benchmark).
 
 This compares the normal `Flux2KleinKVPipeline` reference-image KV cache against that same cache plus [TaylorSeer](https://huggingface.co/docs/diffusers/main/en/optimization/cache#taylorseer-cache). It does not enable text KV caching.
 
@@ -12,7 +12,7 @@ The benchmark uses the pinned FLUX.2 Klein 9B KV checkpoint, one cat reference, 
 
 ```bash
 # From the repository root.
-cd taylorseer_benchmark
+cd taylorseer-benchmark
 python submit_job.py
 ```
 
@@ -25,11 +25,11 @@ python retrieve_results.py
 python make_report.py
 ```
 
-[job.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/job.json) identifies the latest run. The report script verifies image hashes and creates the compact table, PNG/SVG/PDF performance charts, and three image grids without a reference thumbnail.
+[job.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/job.json) identifies the latest run. The report script verifies image hashes and creates the compact table, PNG/SVG/PDF performance charts, and three image grids without a reference thumbnail.
 
 ## Source and configuration
 
-The job uses an unmodified archive of Diffusers commit `5ff8e59ff9fe81c6e2df4fb4c6ea0d97a5df5ab2`, stored in [inputs/diffusers-source.tar.gz](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/inputs/diffusers-source.tar.gz). **No patch is required for this experiment.** The older [Diffusers patch](../flux2-kv/pretrained/inputs/diffusers.patch) enables the faithful no-reference-cache baseline used in previous experiments; do not apply it here.
+The job uses an unmodified archive of Diffusers commit `5ff8e59ff9fe81c6e2df4fb4c6ea0d97a5df5ab2`, stored in [inputs/diffusers-source.tar.gz](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/inputs/diffusers-source.tar.gz). **No patch is required for this experiment.** The older [Diffusers patch](../flux2-kv/pretrained/inputs/diffusers.patch) enables the faithful no-reference-cache baseline used in previous experiments; do not apply it here.
 
 TaylorSeer is configured with `cache_interval=2`, `disable_cache_before_step=3`, `max_order=1`, and bfloat16 factors. The default attention-module hooks cover all double/single blocks. With one-based step numbers, step 4 is predicted in the four-step run; steps 4, 6, and 8 are predicted in the eight-step run. All remaining steps compute normally.
 
@@ -39,9 +39,9 @@ Three initial full steps handle the reference-token shape transition and provide
 - `inputs/validate_taylorseer.py`: tiny-model checks before checkpoint loading.
 - `inputs/benchmark.py`: quality checks, warmups, timing, memory, and serialization.
 - `run_job.py`: remote entry point.
-- [source_manifest.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/source_manifest.json): input hashes.
+- [source_manifest.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/source_manifest.json): input hashes.
 
-For local reproduction, install that Diffusers revision in a separate checkout and use the dependency versions recorded in [job.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer_benchmark/job.json). Then run:
+For local reproduction, install that Diffusers revision in a separate checkout and use the dependency versions recorded in [job.json](https://huggingface.co/buckets/sayakpaul/kv-caching-flow-models-benchmarks/resolve/taylorseer-benchmark/job.json). Then run:
 
 ```bash
 python inputs/validate_taylorseer.py
