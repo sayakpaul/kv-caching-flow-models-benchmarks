@@ -21,5 +21,17 @@
 /taylorseer-benchmark/**/*.tar.gz
 /taylorseer-benchmark/**/*.pt
 /taylorseer-benchmark/**/*.log
+/qwenimage21-benchmark/**/*.png
+/qwenimage21-benchmark/**/*.jpg
+/qwenimage21-benchmark/**/*.jpeg
+/qwenimage21-benchmark/**/*.webp
+/qwenimage21-benchmark/**/*.json
+/qwenimage21-benchmark/**/*.csv
+/qwenimage21-benchmark/**/*.pdf
+/qwenimage21-benchmark/**/*.svg
+/qwenimage21-benchmark/**/*.zip
+/qwenimage21-benchmark/**/*.tar.gz
+/qwenimage21-benchmark/**/*.pt
+/qwenimage21-benchmark/**/*.log
 __pycache__/
 *.pyc
